@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guess who?</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class='text-center'>Who Said That?</h1>
+
+      <div class="row">
+        <div class="col">
+          <h3>Example data: Donald Trump</h3>
+          <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr">A third rate conman who interviewed me many years ago for just a short period of time has been playing his biggest con of all on Fake News CNN. Michael D’Antonio, a broken down hack who knows nothing about me, goes on night after night telling made up Trump stories. Disgraceful!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1088639701064404992?ref_src=twsrc%5Etfw">25 stycznia 2019</a></blockquote>
+
+          <blockquote class="twitter-tweet" data-cards="hidden"><p lang="en" dir="ltr">The citizens of Venezuela have suffered for too long at the hands of the illegitimate Maduro regime. Today, I have officially recognized the President of the Venezuelan National Assembly, Juan Guaido, as the Interim President of Venezuela. <a href="https://t.co/WItWPiG9jK">https://t.co/WItWPiG9jK</a></p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1088146315979251717?ref_src=twsrc%5Etfw">23 stycznia 2019</a></blockquote>
+
+          <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr">MAKE AMERICA GREAT AGAIN!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1086292025744474112?ref_src=twsrc%5Etfw">18 stycznia 2019</a></blockquote>
+
+          <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr">Deroy Murdock, National Review: “We are now exporting oil, which is the first time in my lifetime - we are right now the largest producer of oil and gas. This is not good if you’re Vladimir Putin where your chief export is oil. W.H. Agent - Not good for Kremlin.” <a href="https://twitter.com/TuckerCarlson?ref_src=twsrc%5Etfw">@TuckerCarlson</a></p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1087892911734382592?ref_src=twsrc%5Etfw">23 stycznia 2019</a></blockquote>
+        </div>
+        <div class="col">
+          <h3>Example data: Kim Kardashian</h3>
+          <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr">I’m going to nip this in the bud right now. Kanye was speaking about his own experience of everyone quick to say they are cancelling him because of differences in opinion &amp; not being perfect. The analogies were in context to his own experiences, not defending anyone else.</p>&mdash; Kim Kardashian West (@KimKardashian) <a href="https://twitter.com/KimKardashian/status/1084865437953740804?ref_src=twsrc%5Etfw">14 stycznia 2019</a></blockquote>
+
+          <blockquote class="twitter-tweet" data-lang="pl"><p lang="en" dir="ltr">Wearing Peach 1 and Peach Lip Liner 1 with blush Destiny <a href="https://t.co/aIjp1MBlpZ">https://t.co/aIjp1MBlpZ</a> <a href="https://t.co/aFwh4CoBSk">pic.twitter.com/aFwh4CoBSk</a></p>&mdash; Kim Kardashian West (@KimKardashian) <a href="https://twitter.com/KimKardashian/status/1088507401286766592?ref_src=twsrc%5Etfw">24 stycznia 2019</a></blockquote>
+
+          <blockquote class="twitter-tweet" data-cards="hidden" data-lang="pl"><p lang="en" dir="ltr">Obsessed with this new red lip 💋💋💋 get ready to shop the <a href="https://twitter.com/kkwbeauty?ref_src=twsrc%5Etfw">@kkwbeauty</a> Classic Red Lip this Friday!!!! <a href="https://t.co/sbyklMQhdE">https://t.co/sbyklMQhdE</a> <a href="https://t.co/ALsgQNWI2G">pic.twitter.com/ALsgQNWI2G</a></p>&mdash; Kim Kardashian West (@KimKardashian) <a href="https://twitter.com/KimKardashian/status/1087376814077431808?ref_src=twsrc%5Etfw">21 stycznia 2019</a></blockquote>
+
+
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-info" id="train">
+            Start training
+          </button> <span id="load"></span>
+          <hr>
+          <h3>Gimme example!</h3>
+            <div class="form-group">
+              <label for="comment">Paste text:</label>
+              <textarea class="form-control" id="comment" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="analyze">Submit</button>
+            <hr>
+            <h4>That could be said by...</h4>
+            <strong><div id="result"></div></strong>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./brain.js"></script>
+    <script src="./training-set.js"></script>
+    <script src="./app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
